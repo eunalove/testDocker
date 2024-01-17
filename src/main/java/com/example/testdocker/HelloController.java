@@ -8,6 +8,11 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping
 public class HelloController {
 
+    @GetMapping("")
+    public String getDefault(){
+        return "default";
+    }
+
     @GetMapping("/hello")
     public String getMsg(){
         return "Hello World";
